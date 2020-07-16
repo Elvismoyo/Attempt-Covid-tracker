@@ -142,12 +142,13 @@ input::placeholder {
 .table-input{
     border: 4px solid white !important;
     border-radius: 10px !important;
+    width: 370px !important;
 }
 .listOfCountries-container{
     
     margin-top: 50px;
-    width: 372px !important;
     
+    width: 370px !important;
     height: 600px !important;
     border-radius: 10px;
    
