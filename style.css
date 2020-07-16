@@ -61,12 +61,12 @@ input::placeholder {
         font-size: 12px !important;
     }
     #showGraphBtn{
-    margin-top: 50px;
+    margin-top: 60px;
     left: 200px;
     font-size: 12px !important;
     }
     #chart-data{
-    height: 35vh !important;
+    height: 40vh !important;
     width: 170vw !important;
     
     top: 320px !important;
@@ -75,7 +75,7 @@ input::placeholder {
     background: white;
     
     }    
-    
+  
     
     #country-data-container{
         
@@ -84,8 +84,6 @@ input::placeholder {
         top: 140px;
         
         font-size: 11px !important;
-       
-       
     }
    
     
