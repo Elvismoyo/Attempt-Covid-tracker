@@ -73,7 +73,7 @@ input::placeholder {
     
     top: 270px !important;
     left: -90px;
-    transform: rotate(90deg);
+    
     background: white;
     
     }    
@@ -83,7 +83,7 @@ input::placeholder {
         
         width: 370px !important;
         height: 500px !important;
-        top: 140px;
+        top: 180px !;
         
         font-size: 11px !important;
     }
@@ -139,17 +139,21 @@ input::placeholder {
 
 
 }
-
 .table-input{
-    width: 400px;
-    background-color: lightcoral;
-    
-    border-radius: 10px;
-    outline-width: 0px;  
-    height: 110px;
-    
-    
+    border: 4px solid white !important;
+    border-radius: 10px !important;
 }
+.listOfCountries-container{
+    
+    margin-top: 50px;
+    width: 372px !important;
+    
+    height: 600px !important;
+    border-radius: 10px;
+   
+
+}
+
 
 }
 

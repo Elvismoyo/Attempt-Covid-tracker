@@ -241,14 +241,14 @@ var image ={
     let ctryName = document.getElementById("ctryName").value
     if(ctryName.length==0){
     document.getElementById("listOfCountries-container_id").style.height = "0px";
-     
+    document.getElementById("listOfCountries-container_id").style.visibility = "hidden";
       countriesList = "";
       
   document.getElementById('input-table-data').innerHTML= countriesList;
       return;
     }
     
-    
+    document.getElementById("listOfCountries-container_id").style.visibility = "visible";
     for (const x of arrayOfCountries) {
      
       if(x.toLowerCase().includes(ctryName.toLowerCase())){
