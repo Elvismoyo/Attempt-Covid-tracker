@@ -56,7 +56,7 @@ input::placeholder {
         font-size: 20px;
     }
     #showTableBtn{
-        top: 72px;
+        top: 73px;
         left: 40px;
         font-size: 12px !important;
     }
@@ -82,14 +82,12 @@ input::placeholder {
         width: 370px !important;
         height: 500px !important;
         top: 140px;
-        left: 2px !important;
-        font-size: 12px !important;
+        
+        font-size: 11px !important;
+       
        
     }
-    .btns-container{
-        font-size: 40px !important;
-        
-    }
+   
     
     .info-flag img {
         
