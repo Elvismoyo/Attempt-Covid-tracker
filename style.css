@@ -46,6 +46,7 @@ input::placeholder {
     #map{
         
         height: 850px !important;
+        width: 100% !important;
         
     }
     
@@ -78,10 +79,11 @@ input::placeholder {
     
     #country-data-container{
         
-        width: 350px !important;
+        width: 370px !important;
         height: 500px !important;
         top: 140px;
-        font-size: 13px !important;
+        left: 2px !important;
+        font-size: 12px !important;
        
     }
     .btns-container{
