@@ -73,7 +73,7 @@ input::placeholder {
     
     top: 270px !important;
     left: -90px;
-    
+    transform: rotate(90deg);
     background: white;
     
     }    
