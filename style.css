@@ -69,10 +69,10 @@ input::placeholder {
     }
     #chart-data{
     height: 40vh !important;
-    width: 170vw !important;
+    width: 150vw !important;
     
-    top: 320px !important;
-    left: -130px;
+    top: 270px !important;
+    left: -90px;
     transform: rotate(90deg);
     background: white;
     
