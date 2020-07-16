@@ -82,8 +82,8 @@ input::placeholder {
     #country-data-container{
         
         width: 370px !important;
-        height: 400px !important;
-        top: 180px !;
+        height: 450px !important;
+        top: 180px !important;
         
         font-size: 11px !important;
     }
