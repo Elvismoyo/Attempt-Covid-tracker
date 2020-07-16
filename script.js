@@ -283,7 +283,9 @@ var image ={
     var coordinates = {};
     data.map((country)=>{
       if(countryName==country.country){
-        coordinates = {lat: country.countryInfo.lat, lng: country.countryInfo.long}
+        coordinates = {lat: country.countryInfo.lat, lng: country.countryInfo.long};
+        document.getElementById("listOfCountries-container_id").style.visibility = "hidden";
+        document.getElementById("ctryName").value = "";
         displayNewMap(coordinates);
     }
 
