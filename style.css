@@ -65,11 +65,11 @@ input::placeholder {
     font-size: 12px !important;
     }
     #chart-data{
-    height: 40vh !important;
-    width: 180vw !important;
+    height: 35vh !important;
+    width: 170vw !important;
     
-    top: 300px !important;
-    left: -150px;
+    top: 320px !important;
+    left: -130px;
     transform: rotate(90deg);
     background: white;
     
