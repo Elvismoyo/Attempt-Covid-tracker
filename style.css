@@ -139,16 +139,22 @@ input::placeholder {
 
 
 }
+.indv-countries{
+    font-size: 30px !important;
+    width: 350px !important;
+    
+}
 .table-input{
     border: 4px solid white !important;
     border-radius: 10px !important;
-    width: 370px !important;
+    width: 350px !important;
+    
 }
 .listOfCountries-container{
     
     margin-top: 50px;
     
-    width: 370px !important;
+    width: 350px !important;
     height: 600px !important;
     border-radius: 10px;
    
