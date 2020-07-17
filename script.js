@@ -237,13 +237,13 @@ var image ={
     })
     
   }
-  var center = {lat: 40.730610, lng: -73.935242};
+  var center = {lat: 39.8333333, lng: -98.585522};
   var map;
   function initMap() {
       
     map = new google.maps.Map(document.getElementById('map'), {
       center: center ,
-      zoom: 5,
+      zoom: 6,
       styles: mapStyle,
       zoomControl: false,
       mapTypeControl: false,
@@ -376,7 +376,7 @@ var image ={
     countriesList = "";
     map = new google.maps.Map(document.getElementById('map'), {
       center: center ,
-      zoom: 8,
+      zoom: 7,
       styles: mapStyle,
       zoomControl: false,
       mapTypeControl: false,

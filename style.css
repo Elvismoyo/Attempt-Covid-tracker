@@ -148,14 +148,19 @@ input::placeholder {
     }
 
 }
+@media (max-height: 480px){
+    #map{
+        height: 480px !important;
+    }
 
+}
 @media(max-width: 900px){
 
     #map{
         width: 100% !important;
     }
     #showTableBtn{
-        top: 50px;
+        top: 15px;
         left: -160px ;
     }
     #showGraphBtn{
