@@ -249,14 +249,18 @@ var image ={
     }
     
     document.getElementById("listOfCountries-container_id").style.visibility = "visible";
+    
     for (const x of arrayOfCountries) {
      
-      if(x.toLowerCase().includes(ctryName.toLowerCase())){
+      if(x.toLowerCase().search(ctryName.toLowerCase())!=0){
         
-        showUpDataInTableFromInput(x);
+        continue;
+     
       }
-      
-      
+      showUpDataInTableFromInput(x);
+      if(x.toLowerCase().search(ctryName.toLowerCase())>0){
+        console.log("lol");
+      }
     }
     
     countriesList = "";
