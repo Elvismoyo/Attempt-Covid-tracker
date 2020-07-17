@@ -58,14 +58,15 @@ input::placeholder {
     #showTableBtn{
         top: 73px;
         left: 40px;
-        font-size: 12px !important;
         z-index: 2 !important;
     }
     #showGraphBtn{
     margin-top: 50px;
     left: 200px;
-    font-size: 12px !important;
     z-index: 2 !important;
+    }
+    #showTableBtn,  #showGraphBtn{
+        font-size: 14px !important;
     }
     #chart-data{
     height: 40vh !important;
