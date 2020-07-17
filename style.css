@@ -78,8 +78,6 @@ input::placeholder {
     background: white;
     
     }    
-  
-    
     #country-data-container{
         
         width: 370px !important;
@@ -87,13 +85,9 @@ input::placeholder {
         top: 150px !important;
         font-weight: 600 !important;
         font-size: 10px !important;
-        
-        
-       
     }
   
     .info-flag img {
-        
         width: 220px !important;
         border-bottom: 15px;
     
@@ -104,16 +98,11 @@ input::placeholder {
         background-size: cover;
         border: 4px solid black;
         border-radius: 10px;
-        
-       
-        
     }
     
     .infor-data-container, .info-container{
-    
         width: 230px !important;
         height: 70px !important;
-        
     }
     .info-name {
         font-size: 30px;
@@ -159,20 +148,7 @@ input::placeholder {
     }
 
 }
-/*
-@media screen and (min-width:600px){
 
-    #map{
-        width: 100% !important;
-    }
-    #showTableBtn{
-        left: -160px !important;
-    }
-    #showGraphBtn{
-    right: -420px !important;
-    }
-}
-*/
 #showTableBtn{
     border: 4px solid white;
     position: absolute;
