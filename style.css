@@ -159,7 +159,7 @@ input::placeholder {
     }
 
 }
-@media screen and (max-width:850px){
+@media screen and (min-width:600px){
 
     #map{
         width: 100% !important;
