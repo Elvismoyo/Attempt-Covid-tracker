@@ -159,6 +159,7 @@ input::placeholder {
     }
 
 }
+/*
 @media screen and (min-width:600px){
 
     #map{
@@ -171,7 +172,7 @@ input::placeholder {
     right: -420px !important;
     }
 }
-
+*/
 #showTableBtn{
     border: 4px solid white;
     position: absolute;
