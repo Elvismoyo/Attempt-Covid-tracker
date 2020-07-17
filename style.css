@@ -90,10 +90,7 @@ input::placeholder {
         
        
     }
-   #btn-country, #btn-cases, #btn-recovered, #btn-deaths{
-       font-size: 12px !important;;
-   }
-    
+  
     .info-flag img {
         
         width: 220px !important;
