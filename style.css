@@ -155,7 +155,7 @@ input::placeholder {
         width: 100% !important;
     }
     #showTableBtn{
-        top: 30px;
+        top: 50px;
         left: -160px ;
     }
     #showGraphBtn{
@@ -169,6 +169,9 @@ input::placeholder {
         top: 20px !important;
         font-weight: 600 !important;
         font-size: 15px !important;
+    }
+    #showGraphBtn, #showTableBtn{
+        font-size: 13px !important;
     }
   
 }
@@ -225,8 +228,6 @@ button{
     height: 120px;
     border-radius: 10px;
     outline-width: 0px;
-    
-    
 
 
 }
