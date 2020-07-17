@@ -91,7 +91,7 @@ input::placeholder {
        
     }
    #btn-country, #btn-cases, #btn-recovered, #btn-deaths{
-       font-size: 14px !important;;
+       font-size: 12px !important;;
    }
     
     .info-flag img {
