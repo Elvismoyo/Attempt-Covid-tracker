@@ -66,7 +66,6 @@ input::placeholder {
     #showGraphBtn{
     margin-top: 50px;
     left: 200px;
-    z-index: 2 !important;
     }
     #showTableBtn,  #showGraphBtn{
         font-size: 14px !important;
@@ -156,6 +155,7 @@ input::placeholder {
         width: 100% !important;
     }
     #showTableBtn{
+        top: 30px;
         left: -160px ;
     }
     #showGraphBtn{
