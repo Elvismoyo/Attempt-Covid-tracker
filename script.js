@@ -7,31 +7,43 @@ var closeTbl=0;
 const closeGraph=()=>{
  
 if(close==0){
-  document.getElementById("showGraphBtn").innerHTML = "Close Graph"
+  document.getElementById("showGraphBtn").innerHTML = "Close Graph";
+  
   let edit = document.getElementById("chart-data");
   edit.style.visibility = 'visible';
+  let inContainter= document.getElementById("input-container-id");
+  inContainter.style.visibility="hidden";
   document.getElementById("showTableBtn").style.visibility = "hidden";
-  
-  
-
+  document.getElementById("showGraphBtn").style.visibility = "visible";
+  let background = document.getElementById("map");
+  background.style.visibility = "hidden";
 }
  if(close==1){
  close=-1;
  document.getElementById("showGraphBtn").innerHTML = "Show Graph";
  let edit = document.getElementById("chart-data");
  edit.style.visibility = 'hidden';
+
  document.getElementById("showTableBtn").style.visibility = "visible";
+ let inContainter= document.getElementById("input-container-id");
+ inContainter.style.visibility="visible";
+ let background = document.getElementById("map");
+  background.style.visibility = "visible";
  }
  close++;
 }
 const closeTable=()=>{
  
 if(closeTbl==0){
-  document.getElementById("showTableBtn").innerHTML = "Close Table"
+  document.getElementById("showTableBtn").innerHTML = "Close Table";
   let edit = document.getElementById("country-data-container");
   edit.style.visibility = 'visible';
+  let inContainter = document.getElementById("input-container-id");
+  inContainter.style.visibility="hidden";
+  document.getElementById("showTableBtn").style.visibility = "visible";
   document.getElementById("showGraphBtn").style.visibility = "hidden";
-  
+  let background = document.getElementById("map");
+  background.style.visibility = "hidden";
   
 
 }
@@ -41,7 +53,12 @@ if(closeTbl==0){
  let edit = document.getElementById("country-data-container");
  edit.style.visibility = 'hidden';
  document.getElementById("showGraphBtn").style.visibility = "visible";
- }
+  let inContainter = document.getElementById("input-container-id");
+  inContainter.style.visibility="visible";
+  let background = document.getElementById("map");
+  background.style.visibility = "visible";
+   
+}
  closeTbl++;
 }
 
