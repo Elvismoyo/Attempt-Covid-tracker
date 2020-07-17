@@ -84,6 +84,7 @@ input::placeholder {
         
         width: 370px !important;
         height: 400px !important;
+        right: 3px !important;
         top: 150px !important;
         font-weight: 600 !important;
         font-size: 10px !important;
@@ -169,11 +170,11 @@ input::placeholder {
     #country-data-container{
         
         
-        height: 350px !important;
-        right: 10px !important;
-        top: 20px !important;
-        font-weight: 600 !important;
-        font-size: 15px !important;
+        height: 350px ;
+        right: 10px ;
+        top: 20px ;
+        font-weight: 600 ;
+        font-size: 15px ;
     }
     #showGraphBtn, #showTableBtn{
         font-size: 13px !important;
