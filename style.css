@@ -82,12 +82,17 @@ input::placeholder {
     #country-data-container{
         
         width: 370px !important;
-        height: 450px !important;
+        height: 400px !important;
         top: 150px !important;
         font-weight: 600 !important;
         font-size: 11px !important;
+        
+        
+       
     }
-   
+   #btn-country, #btn-cases, #btn-recovered, #btn-deaths{
+       font-size: 14px !important;;
+   }
     
     .info-flag img {
         
@@ -133,12 +138,6 @@ input::placeholder {
 
 .indv-countries{
     font-size: 30px !important;
-    width: 350px !important;
-    
-}
-.table-input{
-    border: 4px solid white !important;
-    border-radius: 10px !important;
     width: 350px !important;
     
 }
@@ -352,5 +351,10 @@ color: red;
     border:2px solid white ;
     bottom: 70px;
     visibility: hidden;
+    background-color:#212529 ;
     
+}
+
+tr{
+    text-align: center;
 }
