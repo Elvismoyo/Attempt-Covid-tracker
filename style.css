@@ -32,7 +32,8 @@ input::placeholder {
     outline-width: 0px;
     
 }
-@media screen and (max-width:500px){
+
+@media ( max-width:500px ){
     input::placeholder {
     font-size: 20px;
   
@@ -56,9 +57,11 @@ input::placeholder {
         font-size: 20px;
     }
     #showTableBtn{
-        top: 73px;
-        left: 40px;
-        z-index: 2 !important;
+        left: -160px ;
+    }
+    #showTableBtn {
+        top: 73px !important;
+        left: 40px !important;
     }
     #showGraphBtn{
     margin-top: 50px;
@@ -130,9 +133,7 @@ input::placeholder {
    
     
 }
-.input-countriesDisplay-container{
-        border: 4px solid white
-}
+
     .listOfCountries-container{
     
     margin-top: 50px;
@@ -149,6 +150,31 @@ input::placeholder {
 
 }
 
+@media(max-width: 900px){
+
+    #map{
+        width: 100% !important;
+    }
+    #showTableBtn{
+        left: -160px ;
+    }
+    #showGraphBtn{
+    right: -420px !important;
+    }
+    #country-data-container{
+        
+        
+        height: 350px !important;
+        right: 10px !important;
+        top: 20px !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+    }
+  
+}
+.input-countriesDisplay-container{
+    border: 4px solid white
+}
 #showTableBtn{
     border: 4px solid white;
     position: absolute;

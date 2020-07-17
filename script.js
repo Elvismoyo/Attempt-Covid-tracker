@@ -17,6 +17,7 @@ if(close==0){
   document.getElementById("showGraphBtn").style.visibility = "visible";
   let background = document.getElementById("map");
   background.style.visibility = "hidden";
+  document.getElementById("listOfCountries-container_id").style.visibility="hidden";
 }
  if(close==1){
  close=-1;
@@ -29,7 +30,8 @@ if(close==0){
  inContainter.style.visibility="visible";
  let background = document.getElementById("map");
   background.style.visibility = "visible";
- }
+  
+}
  close++;
 }
 const closeTable=()=>{
@@ -44,6 +46,8 @@ if(closeTbl==0){
   document.getElementById("showGraphBtn").style.visibility = "hidden";
   let background = document.getElementById("map");
   background.style.visibility = "hidden";
+  document.getElementById("listOfCountries-container_id").style.visibility="hidden";
+  
   
 
 }
@@ -57,7 +61,7 @@ if(closeTbl==0){
   inContainter.style.visibility="visible";
   let background = document.getElementById("map");
   background.style.visibility = "visible";
-   
+  
 }
  closeTbl++;
 }
