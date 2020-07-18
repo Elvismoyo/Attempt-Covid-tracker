@@ -171,7 +171,7 @@ input::placeholder {
     #showTableBtn{
         top: 25px;
         left: -160px ;
-        border: 4px solid gold !important;
+        border: 4px solid green !important;
     }
     #showGraphBtn{
     right: -420px !important;
@@ -182,8 +182,8 @@ input::placeholder {
         height: 350px !important;
         right: 10px ;
         top: 20px ;
-        font-weight: 700 ;
-        font-size: 15px ;
+        font-weight: 700 !important;
+        font-size: 14px !important;
     }
     #showGraphBtn, #showTableBtn{
         font-size: 14px !important;
