@@ -86,7 +86,7 @@ input::placeholder {
         }
     #btn-recovered-graph{
             top: 83px !important;
-            right: 200px !important;
+            right: 230px !important;
             
             }
 
@@ -196,7 +196,7 @@ input::placeholder {
         font-weight: 800 !important;
     }
     #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
-       font-weight: 900;
+       font-weight: 900 !important;
         
     }
     
@@ -245,13 +245,14 @@ input::placeholder {
             width: 115px !important;
         }
         
+
+}
 #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
     border: 2px solid white;
     border-radius: 10px !important;
     outline-width: 0px !important;
-    font-weight: 700;
+    font-weight: 700 !important;
     
-}
 }
 .input-countriesDisplay-container{
     border: 4px solid white;
@@ -317,6 +318,7 @@ button{
 #btn-cases{
     color: white;
 }
+
 .btns-input{
 border-radius: 10px;
 outline-width: 0px;
