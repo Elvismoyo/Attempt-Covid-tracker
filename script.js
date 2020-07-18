@@ -40,6 +40,7 @@ if(closeTbl==0){
   document.getElementById("showTableBtn").innerHTML = "Close Table";
   let edit = document.getElementById("country-data-container");
   edit.style.visibility = 'visible';
+  edit.style.display = 'block';
   let inContainter = document.getElementById("input-container-id");
   inContainter.style.visibility="hidden";
   document.getElementById("showTableBtn").style.visibility = "visible";
