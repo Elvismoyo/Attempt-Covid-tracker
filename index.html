@@ -57,10 +57,10 @@
         <thead>
           <tr>
             
-            <th><button class="btn-primary" id="btn-country" onclick=" callSortyByName()">List of <br>Countries </button></th>
-            <th><button class="btn-warning" id="btn-cases" onclick="callSortyByCases()">Total Cases </button></th>
-            <th><button class="btn-success" id="btn-recovered" onclick="callSortyByRecovered()">Total Recovered </button></th>
-            <th><button class="btn-danger" id="btn-deaths" onclick="callSortyByDeaths()">Total Deaths </button></th>
+            <th><button class="btn-primary" id="btn-country" onclick=" callSortyByName()">List of <br>Countries</button></th>
+            <th><button class="btn-warning" id="btn-cases" onclick="callSortyByCases()">Total Cases</button></th>
+            <th><button class="btn-success" id="btn-recovered" onclick="callSortyByRecovered()">Total Recovered</button></th>
+            <th><button class="btn-danger" id="btn-deaths" onclick="callSortyByDeaths()">Total Deaths</button></th>
           
           </tr>
         </thead>
@@ -75,10 +75,18 @@
         </tbody>
       </table>
     </div>
-    
+   <div id="visible-r"><button class="btn-success" id="btn-recovered-graph" onclick="showRecoveredGraph()">Recovered</button></div>
+   <div id="visible-d"><button class="btn-danger" id="btn-deaths-graph" onclick="showDeathsGraph()">Deaths</button></div> 
+   
   
     <div id="chart-data" style="position: absolute; height:80vh; width:80vw">
       <canvas id="myChart"></canvas>
+    </div>
+    <div id="chart-data-r" style="position: absolute; height:80vh; width:80vw">
+      <canvas id="myChart-r"></canvas>
+    </div>
+    <div id="chart-data-d" style="position: absolute; height:80vh; width:80vw">
+      <canvas id="myChart-d"></canvas>
     </div>
   </div>
      

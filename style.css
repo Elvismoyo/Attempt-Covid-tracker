@@ -56,9 +56,7 @@ input::placeholder {
         margin-left: 40px;
         font-size: 20px;
     }
-    #showTableBtn{
-        left: -160px ;
-    }
+    
     #showTableBtn {
         top: 73px !important;
         left: 40px !important;
@@ -70,22 +68,30 @@ input::placeholder {
     #showTableBtn,  #showGraphBtn{
         font-size: 14px !important;
     }
-    #chart-data{
+    #chart-data, #chart-data-r, #chart-data-d{
     height: 40vh !important;
     width: 150vw !important;
     
-    top: 270px !important;
+    top: 280px !important;
     left: -90px;
     transform: rotate(90deg);
     background: white;
     
-    }    
+    }
+     
+    #btn-deaths-graph{
+        top: 20px !important;
+        right: 100px !important;
+        }
+    #btn-recovered-graph{
+            top: 75px !important;
+            right: 180px !important;
+            }
+
     #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
         font-weight: 900 !important;
         
     }
-    
-    
     
     #country-data-container{
         
@@ -172,14 +178,12 @@ input::placeholder {
     #showTableBtn{
         top: 25px;
         left: -160px ;
-        border: 4px solid green !important;
+        border: 4px solid fuchsia !important;
     }
     #showGraphBtn{
     right: -420px !important;
     }
     #country-data-container{
-        
-        
         height: 350px !important;
         right: 10px ;
         top: 20px ;
@@ -197,12 +201,29 @@ input::placeholder {
        font-weight: 900;
         
     }
+    
+    
   
 }
 @media (max-height: 500px){
     #map{
         height: 475px !important;
     }
+    #btn-recovered-graph{
+        top: 25px !important;
+        right: 250px !important;
+    }
+    #btn-deaths-graph{
+        right: 480px !important;
+    }
+
+    #myChart, #myChart-r, #myChart-d{
+        top: 10px !important;
+        }
+        #chart-data, #chart-data-r, #chart-data-d{
+            top: 65px !important;
+        }
+    
 }
 #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
     border: 2px solid white;
@@ -292,16 +313,68 @@ border: 4px solid white;
     border-radius: 10px;
 }
 
-
-#chart-data{
-   
-    margin: auto;
+#btn-recovered-graph, #btn-deaths-graph{
+visibility: hidden;
+height: 40px;
+width: 150px;
+}
+.visible-d, .visible-r{
+    height: 40px;
+    width: 180px;
+}
+#btn-recovered-graph{
+    border: 4px solid white;
+    position: absolute;
+    top: 25px;
+    right: 530px;
+    width: 150px;
+    color: ivory;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    outline-width: 0px;
+}
+#btn-deaths-graph{
+    border: 4px solid white;
+    position: absolute;
+    top: 25px;
+    height: 40px;
+    right: 850px;
+    width: 150px;
+    color: ivory;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    outline-width: 0px;
+}
+#chart-data, #chart-data-r, #chart-data-d{
     position: absolute;
     top: 100px;
     
     visibility: hidden;
     
-    background: white;
+    
+    
+}
+
+#myChart, #myChart-r, #myChart-d{
+background-color: white;
+}
+#myChart{
+    border-radius: 10px;
+    border: 4px solid orange;
+
+}
+#myChart-r{
+    border-radius: 10px;
+    border: 4px solid lime;
+
+}
+#myChart-d{
+    border-radius: 10px;
+    border: 4px solid red;
+
 }
 
 .map-info {

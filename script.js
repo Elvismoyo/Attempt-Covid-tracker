@@ -18,6 +18,8 @@ if(close==0){
   let background = document.getElementById("map");
   background.style.visibility = "hidden";
   document.getElementById("listOfCountries-container_id").style.visibility="hidden";
+  document.getElementById("btn-recovered-graph").style.visibility = "visible";
+  document.getElementById("btn-deaths-graph").style.visibility = "visible";
 }
  if(close==1){
  close=-1;
@@ -30,9 +32,22 @@ if(close==0){
  inContainter.style.visibility="visible";
  let background = document.getElementById("map");
   background.style.visibility = "visible";
-  
+  document.getElementById("btn-recovered-graph").style.visibility = "hidden";
+  document.getElementById("btn-deaths-graph").style.visibility = "hidden";
+  document.getElementById("chart-data-r").style.visibility = "hidden";
+  document.getElementById("chart-data-d").style.visibility = "hidden";
 }
  close++;
+}
+const showRecoveredGraph = () =>{
+  document.getElementById("chart-data").style.visibility = "hidden";
+  document.getElementById("chart-data-d").style.visibility = "hidden";
+  document.getElementById("chart-data-r").style.visibility = "visible";
+}
+const showDeathsGraph = () =>{
+  document.getElementById("chart-data").style.visibility = "hidden";
+  document.getElementById("chart-data-r").style.visibility = "hidden";
+  document.getElementById("chart-data-d").style.visibility = "visible";
 }
 const closeTable=()=>{
  
@@ -553,12 +568,15 @@ fetch('https://corona.lmao.ninja/v2/historical/all?lastdays=120')
   
 }).then((data)=>{
 let chartDataCases = buildchartDataCases(data);
- buildChart(chartDataCases);  
+ buildChartCases(chartDataCases);  
+
+let chartDataRecovered = buildchartDataRecovered(data);
+buildChartRecovered(chartDataRecovered);
+
+let chartDataDeaths = buildchartDataDeaths(data);
+buildChartDeaths(chartDataDeaths);
 })
 }
-
-
-
 
 const buildchartDataCases = (data) =>{
 let chartDataCases = [];
@@ -573,8 +591,34 @@ for(let date in data.cases){
 }
 return chartDataCases;
 }
+const buildchartDataRecovered = (data) =>{
+  let chartDataRecovered = [];
+  
+  for(let date in data.recovered){
+    let newDates = {
+      x: date,
+      y: data.recovered[date]
+    }
+    chartDataRecovered.push(newDates);
+    
+  }
+  return chartDataRecovered;
+  }
+  const buildchartDataDeaths = (data) =>{
+    let chartDataDeaths = [];
+    
+    for(let date in data.deaths){
+      let newDates = {
+        x: date,
+        y: data.deaths[date]
+      }
+      chartDataDeaths.push(newDates);
+      
+    }
+    return chartDataDeaths;
+    }
 
-const buildChart = (chartDataCases) =>{
+const buildChartCases = (chartDataCases) =>{
 
 
 var timeFormat = 'MM/DD/YY';
@@ -649,3 +693,137 @@ var chart = new Chart(ctx, {
   }
 });
 }
+const buildChartRecovered = (chartDataRecovered) =>{
+
+
+  var timeFormat = 'MM/DD/YY';
+  var ctx = document.getElementById('myChart-r').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      
+        datasets: [{
+            label: 'World COVID-19 Recovered',
+            backgroundColor: 'green',  
+            borderColor: 'black',
+            borderWidth: 1,
+            data: chartDataRecovered,
+            pointRadius: 5,
+            pointHoverRadius: 6,
+            
+        }]
+    },
+    options: {
+      
+      
+      scales:     {
+        xAxes: [{
+            type:     "time",
+            
+            time:       {
+                format: timeFormat,
+                tooltipFormat: 'll'
+            },
+          
+            ticks: {
+              fontColor: 'black',
+              fontSize: 20        
+          },
+          gridLines: {
+            color: "black",
+        }  
+        }],
+        yAxes: [{
+          ticks: {
+            fontSize: 20,
+            callback: function(value) {
+                return numberWithCommas(value);
+               
+            },
+            fontColor: 'black',     
+          },
+          
+        gridLines: {
+          color: "black",
+      }  
+        
+      }]
+    },
+    legend: {
+      labels: {
+        fontSize: 20,
+        fontColor: 'black'
+      }
+      
+    }
+   
+    }
+  });
+  }
+  const buildChartDeaths = (chartDataDeaths) =>{
+
+
+    var timeFormat = 'MM/DD/YY';
+    var ctx = document.getElementById('myChart-d').getContext('2d');
+    var chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        
+          datasets: [{
+              label: 'World COVID-19 Deaths',
+              backgroundColor: 'red',  
+              borderColor: 'black',
+              borderWidth: 1,
+              data: chartDataDeaths,
+              pointRadius: 5,
+              pointHoverRadius: 6,
+              
+          }]
+      },
+      options: {
+        
+        
+        scales:     {
+          xAxes: [{
+              type:     "time",
+              
+              time:       {
+                  format: timeFormat,
+                  tooltipFormat: 'll'
+              },
+            
+              ticks: {
+                fontColor: 'black',
+                fontSize: 20        
+            },
+            gridLines: {
+              color: "black",
+          }  
+          }],
+          yAxes: [{
+            ticks: {
+              fontSize: 20,
+              callback: function(value) {
+                  return numberWithCommas(value);
+                 
+              },
+              fontColor: 'black',     
+            },
+            
+          gridLines: {
+            color: "black",
+        }  
+          
+        }]
+      },
+      legend: {
+        labels: {
+          fontSize: 20,
+        fontColor: 'black'
+        }
+        
+      }
+     
+      }
+    });
+    }
