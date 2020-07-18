@@ -94,7 +94,7 @@ var image ={
       return response.json();
       
     }).then((data)=>{
-     
+      
       showDataOnMap(data); 
       showDataInTable(data); 
       getHistoricalData(data);
@@ -166,7 +166,7 @@ var image ={
       return response.json();
       
     }).then((data)=>{
-     
+      
       exclusiveForSort(data);
 
     })
@@ -174,10 +174,9 @@ var image ={
   }
 
   exclusiveForSort=(data)=>{
-
     for(i;i<data.length;i++){
-      copyData.push([data[i].country,data[i].cases,
-    data[i].recovered,data[i].deaths])
+      copyData.push([data[i].country,data[i].active,
+    data[i].todayRecovered,data[i].todayDeaths])
     
       }
       if(option==1)
@@ -297,9 +296,7 @@ var image ={
      
       }
       showUpDataInTableFromInput(x);
-      if(x.toLowerCase().search(ctryName.toLowerCase())>0){
-        console.log("lol");
-      }
+      
     }
     
     countriesList = "";
@@ -437,12 +434,13 @@ var image ={
 const showDataInTable = (data) =>{
   var html ='';
   data.forEach(country => {
+   
       html += `
   <tr>
       <td>${country.country}</td>
-      <td>${numberWithCommas(country.cases)}</td>
-      <td>${numberWithCommas(country.recovered)}</td>
-      <td>${numberWithCommas(country.deaths)}</td>
+      <td>${numberWithCommas(country.active)}</td>
+      <td>${numberWithCommas(country.todayRecovered)}</td>
+      <td>${numberWithCommas(country.todayDeaths)}</td>
   </tr>
   `
   });
@@ -451,6 +449,7 @@ const showDataInTable = (data) =>{
 }
 
 const showUpdateDataInTable = (data) =>{
+  
 html ='';
   
   
