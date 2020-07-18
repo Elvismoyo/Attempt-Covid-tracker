@@ -171,7 +171,7 @@ input::placeholder {
     #showTableBtn{
         top: 25px;
         left: -160px ;
-        border: 4px solid magenta !important;
+        border: 4px solid sienna !important;
     }
     #showGraphBtn{
     right: -420px !important;
@@ -182,11 +182,16 @@ input::placeholder {
         height: 350px !important;
         right: 10px ;
         top: 20px ;
-        font-weight: 600 ;
+        font-weight: 700 ;
         font-size: 15px ;
     }
     #showGraphBtn, #showTableBtn{
-        font-size: 13px !important;
+        font-size: 14px !important;
+        font-weight: 800 !important;
+    }
+    #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
+       font-weight: 900;
+        
     }
   
 }
