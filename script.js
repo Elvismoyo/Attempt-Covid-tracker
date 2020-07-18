@@ -219,13 +219,8 @@ var image ={
     
       var htmlInfo = `
       <div class="info-container">
-        <div class="info-flag" style="background-image: url(${country.countryInfo.flag})">
-          
-          
-        </div>
-        <div class="info-name">
-          ${country.country}
-        </div>
+        <div class="info-flag" style="background-image: url(${country.countryInfo.flag})"></div>
+        <div class="info-name"> ${country.country}</div>
        <div class="infor-data-container">
         <div class="info-titles">
         <div class="title-1">Cases:</div>
