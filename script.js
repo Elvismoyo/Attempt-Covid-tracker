@@ -549,25 +549,29 @@ fetch('https://corona.lmao.ninja/v2/historical/all?lastdays=120')
   return response.json();
   
 }).then((data)=>{
-let ChartData = buildChartData(data);
- buildChart(ChartData);  
+let chartDataCases = buildchartDataCases(data);
+ buildChart(chartDataCases);  
 })
 }
-const buildChartData = (data) =>{
-let ChartData = [];
+
+
+
+
+const buildchartDataCases = (data) =>{
+let chartDataCases = [];
 
 for(let date in data.cases){
   let newDates = {
     x: date,
     y: data.cases[date]
   }
-  ChartData.push(newDates);
+  chartDataCases.push(newDates);
   
 }
-return ChartData;
+return chartDataCases;
 }
 
-const buildChart = (chartData) =>{
+const buildChart = (chartDataCases) =>{
 
 
 var timeFormat = 'MM/DD/YY';
@@ -584,7 +588,7 @@ var chart = new Chart(ctx, {
           backgroundColor: 'orange',  
           borderColor: 'purple',
           borderWidth: 1,
-          data: chartData,
+          data: chartDataCases,
           pointRadius: 5,
           pointHoverRadius: 6,
           
