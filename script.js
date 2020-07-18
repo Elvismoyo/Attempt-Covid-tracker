@@ -243,9 +243,10 @@ var image ={
       
     map = new google.maps.Map(document.getElementById('map'), {
       center: center ,
+      minZoom: 4,
+      maxZoom: 8,
       zoom: 6,
       styles: mapStyle,
-      zoomControl: false,
       mapTypeControl: false,
       fullscreenControl: false,
       gestureHandling: 'greedy'
