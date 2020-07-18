@@ -249,7 +249,9 @@ var image ={
       styles: mapStyle,
       mapTypeControl: false,
       fullscreenControl: false,
-      gestureHandling: 'greedy'
+      streetViewControl: false,
+      zoomControl: false,
+      gestureHandling: 'greedy',
     });
     infoWindow = new google.maps.InfoWindow();
     
@@ -381,9 +383,10 @@ var image ={
       maxZoom: 8,
       zoom: 6,
       styles: mapStyle,
-      zoomControl: false,
       mapTypeControl: false,
       fullscreenControl: false,
+      streetViewControl: false,
+      zoomControl: false,
       gestureHandling: 'greedy'
     });
     newinfoWindow = new google.maps.InfoWindow();
