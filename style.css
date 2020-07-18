@@ -81,11 +81,12 @@ input::placeholder {
      
     #btn-deaths-graph{
         top: 20px !important;
-        right: 100px !important;
+        right: 130px !important;
         }
     #btn-recovered-graph{
-            top: 75px !important;
-            right: 180px !important;
+            top: 80px !important;
+            right: 200px !important;
+            
             }
 
     #btn-country, #btn-recovered, #btn-cases, #btn-deaths{
@@ -178,7 +179,7 @@ input::placeholder {
     #showTableBtn{
         top: 25px;
         left: -160px ;
-        border: 4px solid yellow !important;
+        border: 4px solid white !important;
     }
     #showGraphBtn{
     right: -420px !important;
@@ -210,10 +211,11 @@ input::placeholder {
         height: 475px !important;
     }
     #btn-recovered-graph{
-        top: 25px !important;
+        top: 35px !important;
         right: 250px !important;
     }
     #btn-deaths-graph{
+        top: 35px !important;
         right: 480px !important;
     }
 
@@ -221,7 +223,7 @@ input::placeholder {
         top: 10px !important;
         }
         #chart-data, #chart-data-r, #chart-data-d{
-            top: 65px !important;
+            top: 80px !important;
         }
     
 }
