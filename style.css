@@ -210,7 +210,7 @@ input::placeholder {
 }
 @media (max-height: 500px){
     #map{
-        height: 475px !important;
+        height: 570px !important;
     }
     #btn-recovered-graph{
         top: 35px !important;
