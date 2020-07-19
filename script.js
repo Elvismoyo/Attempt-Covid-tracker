@@ -1,5 +1,6 @@
 window.onload=()=>{
   getCountryData();
+  $('#myModal').modal('show');
   document.getElementById("listOfCountries-container_id").style.visibility = "hidden";
 }
 var close = 0;
