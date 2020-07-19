@@ -78,8 +78,17 @@
    <div id="visible-r"><button class="btn-success" id="btn-recovered-graph" onclick="showRecoveredGraph()">Recovered</button></div>
    <div id="visible-d"><button class="btn-danger" id="btn-deaths-graph" onclick="showDeathsGraph()">Deaths</button></div> 
    
+   <div id="chart-data" style="position: absolute; height:80vh; width:80vw">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div id="chart-data-r" style="position: absolute; height:80vh; width:80vw">
+    <canvas id="myChart-r"></canvas>
+  </div>
+  <div id="chart-data-d" style="position: absolute; height:80vh; width:80vw">
+    <canvas id="myChart-d"></canvas>
+  </div>
    <div class="modal hide" id="myModal" onclick="$('.modal').hide()">
-    <div class="modal-header" data-dismiss="modal">
+    <div class="modal-header" data-dismiss="modal" >
       
       <h1 class="modal-title">COVID - 19 TRACKER</h3>
     </div>
@@ -109,15 +118,7 @@
     </div>
   
   </div>
-    <div id="chart-data" style="position: absolute; height:80vh; width:80vw">
-      <canvas id="myChart"></canvas>
-    </div>
-    <div id="chart-data-r" style="position: absolute; height:80vh; width:80vw">
-      <canvas id="myChart-r"></canvas>
-    </div>
-    <div id="chart-data-d" style="position: absolute; height:80vh; width:80vw">
-      <canvas id="myChart-d"></canvas>
-    </div>
+   
   </div>
      
     
