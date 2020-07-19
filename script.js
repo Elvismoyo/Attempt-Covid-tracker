@@ -395,7 +395,7 @@ var image ={
       fullscreenControl: false,
       streetViewControl: false,
       zoomControl: false,
-      gestureHandling: 'greedy'
+     
     });
     newinfoWindow = new google.maps.InfoWindow();
     
