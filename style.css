@@ -120,7 +120,8 @@ input::placeholder {
     
     .infor-data-container, .info-container{
         width: 220px !important;
-        height: 100px !important;
+        height: 50px !important;
+       
     }
     .info-name {
         font-size: 20px !important;
@@ -229,20 +230,23 @@ input::placeholder {
             right: 10px !important;
 
         }
-        .info-container {
+        .info-container, .infor-data-container {
             width: 222px !important;
-            height: 260px !important;
-            overflow: hidden;
+            height: 30px !important;
+            
+           
            
         }
         .info-name{
-            font-size: 25px !important;
+            font-size: 20px !important;
+            height: 39px !important;
         }
         .info-titles, .info-numbers{
-            font-size: 18px !important;
+            font-size: 16px !important;
         }
         .info-numbers{
-            width: 115px !important;
+            width: 50px !important;
+            
         }
         
 
@@ -435,11 +439,7 @@ background-color: white;
     
     
 }
-.infor-data-container{
-    max-height: 10px;
-    width: 220px;
-    
-}
+
 .info-name {
     font-size: 30px;
     font-weight: bold;
@@ -449,8 +449,8 @@ background-color: white;
 }
 
 .info-container {
-    width: 220px;
-    height: 250px;
+    width: 230px;
+    height: 300px;
 }
 
 
