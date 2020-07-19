@@ -225,6 +225,7 @@ input::placeholder {
         }
         #chart-data, #chart-data-r, #chart-data-d{
             top: 80px !important;
+            width: 750px !important;
         }
         #country-data-container{
             width: 600px !important;
