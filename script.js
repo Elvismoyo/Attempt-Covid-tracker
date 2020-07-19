@@ -261,7 +261,7 @@ var image ={
       fullscreenControl: false,
       streetViewControl: false,
       zoomControl: false,
-      gestureHandling: 'greedy',
+     
     });
     infoWindow = new google.maps.InfoWindow();
     
