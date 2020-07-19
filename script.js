@@ -223,9 +223,9 @@ var image ={
         <div class="info-name"> ${country.country}</div>
        <div class="infor-data-container">
         <div class="info-titles">
-        <div class="title-1">Cases:</div>
-        <div class="title-2">Recovered:</div>
-        <div class="title-3">Deaths:</div>
+        <div class="title-1">Total cases:</div>
+        <div class="title-2">Total recovered:</div>
+        <div class="title-3">Total deaths:</div>
         </div>
          <div class="info-numbers">
          <div class="title-1"> ${numberWithCommas(country.cases)}</div>
@@ -351,9 +351,9 @@ var image ={
         </div>
        <div class="infor-data-container">
         <div class="info-titles">
-        <div class="title-1">Cases:</div>
-        <div class="title-2">Recovered:</div>
-        <div class="title-3">Deaths:</div>
+        <div class="title-1">Total cases:</div>
+        <div class="title-2">Total recovered:</div>
+        <div class="title-3">Total deaths:</div>
         </div>
          <div class="info-numbers">
          <div class="title-1"> ${numberWithCommas(country.cases)}</div>
