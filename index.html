@@ -78,12 +78,12 @@
    <div id="visible-r"><button class="btn-success" id="btn-recovered-graph" onclick="showRecoveredGraph()">Recovered</button></div>
    <div id="visible-d"><button class="btn-danger" id="btn-deaths-graph" onclick="showDeathsGraph()">Deaths</button></div> 
    
-   <div class="modal hide" id="myModal">
-    <div class="modal-header">
-      <a class="close" data-dismiss="modal">×</a>
+   <div class="modal hide" id="myModal" onclick="$('.modal').hide()">
+    <div class="modal-header" data-dismiss="modal">
+      <a class="close" data-dismiss="modal"></a>
       <h1 class="modal-title">COVID - 19 TRACKER</h3>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" data-dismiss="modal">
       <h3 class="modal-instructions">For Mobile Users:
         <ul style="list-style-type:square">
           <li>To fully visualize the graphs,
@@ -96,7 +96,8 @@
              <li>COVID-19 Daily updated data 
                can be found in the "Show table" button </li>
                <li>COVID-19 Historical World data can be found in "Show graph" button</li>
-              <li>Looking for a country's total data? Simply use the search bar and click on the virus icon</li>
+              <li>Clicking on a virus icon will display a country's total data</li>
+               <li>Looking for a specific country's total data? Simply use the search bar and click on the virus icon</li>
               <li>Enjoy, using this
                 COVID - 19 tracker</li> 
               <li id="text-red">Click anywhere to start</li>
@@ -104,8 +105,9 @@
         </ul>
         </h3>
       </p>
+      
     </div>
-    
+  
   </div>
     <div id="chart-data" style="position: absolute; height:80vh; width:80vw">
       <canvas id="myChart"></canvas>
