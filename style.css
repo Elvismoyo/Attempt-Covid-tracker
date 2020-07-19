@@ -107,6 +107,7 @@ input::placeholder {
         top: 150px !important;
         font-weight: 800 !important;
         font-size: 11px !important;
+        overflow: auto !important;
     }
   
     .info-flag img {
@@ -233,6 +234,7 @@ input::placeholder {
             height: 350px !important;
             top: 10px !important;
             right: 10px !important;
+            overflow: auto !important;
 
         }
         .info-container, .infor-data-container {
