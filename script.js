@@ -213,10 +213,6 @@ var image ={
             }
             checkO=true;
   }
-    console.log(newData);
-    console.log(data);
-    console.log(copyData);
-    console.log(checkO++);
 
     if(option==1)
     sortByCountryName(copyData);
