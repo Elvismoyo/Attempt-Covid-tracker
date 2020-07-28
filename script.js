@@ -2,6 +2,7 @@ window.onload=()=>{
   getCountryData();
   $('#myModal').modal('show');
   document.getElementById("listOfCountries-container_id").style.visibility = "hidden";
+  newApi();
 }
 var close = 0;
 var closeTbl=0;
@@ -104,7 +105,7 @@ var image ={
     })
   }   
   var option = 0;    
-  var i = 0;
+  var i = 0,j =0;;
   var choice = 0;
   var copyData = []              
   callSortyByName=()=>{
@@ -173,24 +174,58 @@ var image ={
     })
     
   }
-
+  var newData;
+  newApi=()=>{
+    
+    fetch('https://api.covid19api.com/summary')
+    .then((response)=>{
+      return response.json();
+      
+    }).then((data)=>{
+      
+      
+      newData = data;
+    })
+    
+  }
+  var checkO = true;
   exclusiveForSort=(data)=>{
     for(i;i<data.length;i++){
+      
+      if(data[i].todayDeaths==0 || data[i].todayRecovered==0){
+        for(j=0;j<186;j++){
+          if(data[i].country==newData.Countries[j].Country){
+            copyData.push([data[i].country,data[i].active,
+           newData.Countries[j].NewRecovered,newData.Countries[j].NewDeaths])
+           
+           checkO=false;
+           break;
+          }
+         
+                 
+        }
+
+      
+    }
+    if(checkO){
       copyData.push([data[i].country,data[i].active,
-    data[i].todayRecovered,data[i].todayDeaths])
-    
-      }
-      if(option==1)
-      sortByCountryName(copyData);
-      if(option==2)
-      sortByCountryCases(copyData);
-      if(option==3)
-      sortByCountryRecovered(copyData);
-      if(option==4)
-      sortByCountryDeaths(copyData);
-      
-      
-      
+        data[i].todayRecovered,data[i].todayDeaths]) 
+            }
+            checkO=true;
+  }
+    console.log(newData);
+    console.log(data);
+    console.log(copyData);
+    console.log(checkO++);
+
+    if(option==1)
+    sortByCountryName(copyData);
+    if(option==2)
+    sortByCountryCases(copyData);
+    if(option==3)
+    sortByCountryRecovered(copyData);
+    if(option==4)
+    sortByCountryDeaths(copyData);
   }
   var infoWindow;
   var arrayOfCountries = [];
@@ -421,11 +456,6 @@ var image ={
   
     
   }
-
-  //By default it load in that position (NYC)
-  
-    
-
     
 const showDataInTable = (data) =>{
   var html ='';
@@ -439,6 +469,7 @@ const showDataInTable = (data) =>{
       <td>${numberWithCommas(country.todayDeaths)}</td>
   </tr>
   `
+  //change-this
   });
   document.getElementById('table-data').innerHTML= html;
   
@@ -461,8 +492,10 @@ html ='';
 </tr>
 `
 //reset so elements from 0-3 are displayed
+
 info=0;
   }
+  
   document.getElementById('table-data').innerHTML= html;
 
 }
