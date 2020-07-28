@@ -521,22 +521,6 @@ tr{
     text-align: center;
 }
 
-.modal-title{
-    color:white;
-    border-radius: 10px;
-    width: 1800px;
-    background-color: black;
-    
-}
-.modal-instructions{
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    font-weight: 700;
-}
-.modal{
-    text-align: center;
-}
 .all-users{
     font-weight: 700;
 }

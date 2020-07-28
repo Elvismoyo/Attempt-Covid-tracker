@@ -213,8 +213,7 @@ var image ={
             }
             checkO=true;
   }
-    console.log(newData);
-    console.log(data);
+    
     
    
 
