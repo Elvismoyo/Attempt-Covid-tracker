@@ -192,7 +192,7 @@ var image ={
   exclusiveForSort=(data)=>{
     for(i;i<data.length;i++){
       
-      if(data[i].todayDeaths==0 || data[i].todayRecovered==0){
+      if(data[i].todayDeaths==0 && data[i].todayRecovered==0){
         for(j=0;j<186;j++){
           if(data[i].country==newData.Countries[j].Country){
             copyData.push([data[i].country,data[i].active,
@@ -213,6 +213,10 @@ var image ={
             }
             checkO=true;
   }
+    console.log(newData);
+    console.log(data);
+    
+   
 
     if(option==1)
     sortByCountryName(copyData);
